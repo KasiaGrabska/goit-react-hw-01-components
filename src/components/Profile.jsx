@@ -6,29 +6,31 @@ export const Profile = ({ user }) => {
   const { followers, views, likes } = stats;
 
   return (
-    <div className={clsx('profile')}>
-      <div className={clsx('description')}>
-        <img src={avatar} alt="User avatar" className={clsx('avatar')} />
-        <p>{username}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
-      </div>
+    <>
+      <div className={clsx('profile')}>
+        <div className={clsx('description')}>
+          <img src={avatar} alt="User avatar" className={clsx('avatar')} />
+          <p>{username}</p>
+          <p>@{tag}</p>
+          <p>{location}</p>
+        </div>
 
-      <ul className={clsx('stats')}>
-        <li>
-          <span className={clsx('label')}>Followers</span>
-          <span className={clsx('quantity')}>{followers}</span>
-        </li>
-        <li>
-          <span className={clsx('label')}>Views</span>
-          <span className={clsx('quantity')}>{views}</span>
-        </li>
-        <li>
-          <span className={clsx('label')}>Likes</span>
-          <span className={clsx('quantity')}>{likes}</span>
-        </li>
-      </ul>
-    </div>
+        <ul className={clsx('stats')}>
+          <li>
+            <span className={clsx('label')}>Followers</span>
+            <span className={clsx('quantity')}>{followers}</span>
+          </li>
+          <li>
+            <span className={clsx('label')}>Views</span>
+            <span className={clsx('quantity')}>{views}</span>
+          </li>
+          <li>
+            <span className={clsx('label')}>Likes</span>
+            <span className={clsx('quantity')}>{likes}</span>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 
