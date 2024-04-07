@@ -3,11 +3,11 @@
 }
 
 .online {
-  font-size: xx-large;
+  font-size: 24px;
   color: green;
 }
 
 .offline {
-  font-size: xx-large;
+  font-size: 24px;
   color: red;
 }
