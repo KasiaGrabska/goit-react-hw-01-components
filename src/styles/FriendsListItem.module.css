@@ -1,0 +1,13 @@
+.item {
+  list-style-type: none;
+}
+
+.online {
+  font-size: xx-large;
+  color: green;
+}
+
+.offline {
+  font-size: xx-large;
+  color: red;
+}
